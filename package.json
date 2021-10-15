@@ -17,7 +17,12 @@
     "@aws-cdk/core": "1.126.0",
     "@serverless-stack/cli": "0.47.0",
     "@serverless-stack/resources": "0.47.0",
+    "aws-amplify": "^4.3.2",
     "aws-sdk": "^2.1008.0",
+    "react-bootstrap": "^1.6.1",
+    "react-icons": "^4.2.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0",
     "stripe": "^8.183.0",
     "uuid": "^7.0.3"
   }
