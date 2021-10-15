@@ -54,3 +54,24 @@ Making API request
     createdAt: 1634287709339
   }
 }
+
+
+sk_test_51JkwkUFYuMja9RYQTF4TG8uaLbiXEELA0vvXbLXSZC2RioAHiBKAq4qZVE94dABZB4Iiu955cStet7lNgH1vihr00064AFwLo6
+
+
+pk_test_51JkwkUFYuMja9RYQdpoGPwrrqSb2qVQQFPQPbyA0x8HqU4lSjfZ5LaOn0RK15X3Wmht0FQmGsoP4kMY9yuEKOLox00w42csBep
+
+
+
+npx aws-api-gateway-cli-test \
+--username='admin@example.com' \
+--password='Passw0rd!' \
+--user-pool-id='ap-southeast-2_VFgQ0vfAY' \
+--app-client-id='6mniastqp6h5m6dssn7st4tit7' \
+--cognito-region='ap-southeast-2' \
+--identity-pool-id='ap-southeast-2:8d2598d7-ce11-4993-b8b4-cba4347f7c40' \
+--invoke-url='https://0l6eraaq4j.execute-api.ap-southeast-2.amazonaws.com' \
+--api-gateway-region='ap-southeast-2' \
+--path-template='/billing' \
+--method='POST' \
+--body='{"source":"tok_visa","storage":21}'
