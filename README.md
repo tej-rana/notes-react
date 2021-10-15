@@ -10,6 +10,8 @@ cognito user pool) and actual processing logic (lamda).
 
 You will need aws-cli, signed in with an aws account (this is where the code gets published) and latest version of node installed.
 
+You will also need to create a test developer account in stripe for this application to work.
+
 ## Running
 Run `npm i` to install all the packages
 Run `npx sst start` to deploy the stacks
