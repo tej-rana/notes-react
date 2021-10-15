@@ -1,0 +1,56 @@
+curl -X POST \
+-H 'Content-Type: application/json' \
+-d '{"content":"Hello World","attachment":"hello.jpg"}' \
+ https://0l6eraaq4j.execute-api.ap-southeast-2.amazonaws.com/notes
+
+ 
+
+ https://0l6eraaq4j.execute-api.ap-southeast-2.amazonaws.com/notes/edbc1ca0-2d73-11ec-b9e7-ad891f4b45d1/
+
+ https://0l6eraaq4j.execute-api.ap-southeast-2.amazonaws.com/notes/
+
+
+  aws cognito-idp sign-up \
+  --region ap-southeast-2 \
+  --client-id 6mniastqp6h5m6dssn7st4tit7 \
+  --username admin@example.com \
+  --password Passw0rd!
+
+
+  aws cognito-idp admin-confirm-sign-up \
+  --region ap-southeast-2  \
+  --user-pool-id ap-southeast-2_VFgQ0vfAY \
+  --username admin@example.com
+
+
+
+
+  npx aws-api-gateway-cli-test \
+--username='admin@example.com' \
+--password='Passw0rd!' \
+--user-pool-id='ap-southeast-2_VFgQ0vfAY' \
+--app-client-id='6mniastqp6h5m6dssn7st4tit7' \
+--cognito-region='ap-southeast-2' \
+--identity-pool-id='ap-southeast-2:8d2598d7-ce11-4993-b8b4-cba4347f7c40' \
+--invoke-url='https://0l6eraaq4j.execute-api.ap-southeast-2.amazonaws.com' \
+--api-gateway-region='ap-southeast-2' \
+--path-template='/notes' \
+--method='POST' \
+--body='{"content":"hello world","attachment":"hello.jpg"}'
+
+
+
+Authenticating with User Pool
+Getting temporary credentials
+Making API request
+{
+  status: 200,
+  statusText: 'OK',
+  data: {
+    userId: 'ap-southeast-2:483b5a90-7b5a-4006-9424-ee9a13a4c83c',
+    noteId: 'ab43a6b0-2d94-11ec-99cb-1937e4e7a01d',
+    content: 'hello world',
+    attachment: 'hello.jpg',
+    createdAt: 1634287709339
+  }
+}
