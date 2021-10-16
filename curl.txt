@@ -75,3 +75,10 @@ npx aws-api-gateway-cli-test \
 --path-template='/billing' \
 --method='POST' \
 --body='{"source":"tok_visa","storage":21}'
+
+
+
+aws cognito-idp admin-confirm-sign-up \
+   --region ap-southeast-2 \
+   --user-pool-id ap-southeast-2_VFgQ0vfAY \
+   --username tej.rana@hotmail.com
